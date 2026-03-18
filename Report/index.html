@@ -64,11 +64,22 @@ achieved it.</p>
 <div class="container mt-5">
   <div class="row">
     <div class="col-sm-12">
-      <h3>Description and Demonstration of each requirement</h3>
+      <h3>Meeting the Brief</h3>
 <p>
-You may wish to include a brief written description, with images, demonstrating how your artefact
-meets each of the requirements. You will not be penalised marks for not including any text if your
-video is sufficient in describing how you meet each of the requirements. </p>
+The aim of this project is to design and develop an embedded environmental monitoring system that collects environmental data related to wildfire risk. The system measures temperature and soil moisture using analogue sensors connected to a BBC micro:bit and simulates logging events through a digital input. The collected data is transferred to a Python program and stored in a CSV file where it is analysed using a disaster risk model. The model predicts wildfire risk under different environmental conditions and logging scenarios. The system also includes a feedback mechanism that activates an alarm and LED warning when high-risk wildfire conditions occur.
+
+Basic Requirements - 
+Basic requirement 1 - The embedded system includes two analogue inputs and one digital input. Temperature and soil moisture are analogue inputs because their values vary continuously. Temperature is measured using the micro:bit temperature sensor while soil moisture is measured using a soil probe connected to the micro:bit pins. The digital input is the logging simulation, activated using Button B. When pressed, the system simulates trees being removed from the forest. 
+
+Basic requirement 2 - all the data that my microbit is being fed is being transferred to my python file that is sent to the CSV file to be stored for inspection later on in the advanced requirements. 
+
+Basic Requirement 3 - My system simulates a real-world process that is related to the theme of wildfires. My factors of temperature, soil moisture and logging all contribute to the risk of wildfires, which is what I am trying to show in my simulation.
+
+Advanced Requirement 1 - I have created a disaster risk model that takes all 3 factors into account and calculates the risk of a wildfire starting. My model uses data that has been collected by my microbit and stored in my csv file to come up with this calculation. 
+
+Advanced Requirement 2 - My simulation explores how a range of what if scenarios affect the risk of a wildfire starting. For example, what if the temperature increases? What if the soil becomes dryer? 
+
+Advanced Requirement 3 - The system includes a feedback mechanism that automatically responds to dangerous environmental conditions. When temperature rises above 25°C, soil moisture falls below a safe threshold, or the number of trees falls below 200, the system triggers a warning alarm and activates a red LED. This demonstrates an adaptive system responding to changing environmental conditions. </p>
      
     </div>
    
