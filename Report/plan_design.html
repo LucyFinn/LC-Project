@@ -50,13 +50,71 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-sm-12">
-       <p>This section of the report should contain a clear description of the design objectives of your project.
-Your planning should show consideration of the following:
-- Different project options and justification of design choices
-- Stakeholders and end user needs
-- The technologies that will be used
-- System architecture/high-level flowchart showing components</p>
-     
+       <p>For my BR1 I am planning to do soil moisture and temperature as my analogue inputs as the data can vary from each of these factors, it is not one or zero. For my digital input I am going to do the impact of logging, there is either logging or there isn’t. <br/> <br/> 
+       <i><b>Soil Moisture:</b></i> I could place 2 nails in the soil of the plant at an equal depth and a suitable gap between them. It is important to keep the same depth as this could affect the results if they are at different heights. I will connect my microbit to the nails by using two crocodile clips on the Pin 1 and the negative on the breakout board (ensure that the nails do not touch each other as this can damage the microbit).<br/> <br/>
+       <i><b>Temperature:</b></i> To measure the external temperature using a microbit with a temperature sensor. Connected to a serial line so that all the data will be collected into a thonny file. To help simulate hot and cold temperatures a hairdryer could be used on a hot and cold setting.<br/> <br/>
+      <i><b>Logging:</b></i> The less trees there are the more exposed the soil is to the sun which in turn will make the soil become dryer. However the less trees there are the less water that is being taken out of the ground. 
+         <ul>
+           <li>I could make a logging simulation where a button is assigned to trees being removed and one will be assigned to trees being replanted. The risk will increase the more trees that are removed as the soil is more exposed to the heat and the risk will decrease the more trees that are replanted. </li>
+         </ul>
+        Random digital signal, for every tree lost the higher the risk of wildfires - algorithm. The real-world link for logging is logging removes canopy cover which then increases the temperature of the soil resulting in a dryer soil. Increasing the risk of wildfires. 
+       </p>
+
+      <h4><u><b>Technology Used:</b></u></h4>
+      <table>
+        <tr>
+          <th><i>Hardware:</i></th>
+        </tr>
+        <tr>
+          <td>BBC micro:bit</td>
+        </tr>
+        <tr>
+          <td>Soil moisture sensor</td>
+        </tr>
+        <tr>
+          <td>Crocodile clips</td>
+        </tr>
+        <tr>
+          <td>LED lights</td>
+        </tr>
+        <tr>
+          <td>USB connection</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th><i>Software:</i></th>
+        </tr>
+        <tr>
+          <td>Python</td>
+        </tr>
+        <tr>
+          <td>Thonny</td>
+        </tr>
+        <tr>
+          <td>CSV data storage</td>
+        </tr>
+        <tr>
+          <td>Data analysis algorithms</td>
+        </tr>
+      </table>
+      <br/>
+      <p>
+        The main stakeholders that are involved in this system are forest managers, environmental scientists and wildfire prevention agencies. Forest managers could use this system to monitor the risk of a wildfire in order to prevent it. Environmental scientists can use the data collected from the system to be able to gather information on the conditions that are suitable for wildfires. Local communities would benefit greatly from the wildfire prevention agencies in order to stay protected.  <br/> <br/>
+        For the BR2 I am required to gather and store the environmental data that I have chosen to simulate. I will be able to transfer the data collected by the microbit into a python file that can then be displayed as a csv file. The csv data will be easier to show and to prove the risk that certain environmental factors have on the risk of wildfires. <br/> 
+        Open sources of data can include:
+      <ul>
+        <li>Forest temperature data</li>
+        <li>Wildfire occurrence data</li>
+      </ul>
+
+      Linked with the data I myself have collected can help to simulate what if scenarios linked with wildfire risk, these are a part of my AR2. The scenarios I am wishing to test are:
+      <ul>
+        <li>What if the soil moisture increases?</li>
+        <li>What if the temperature rises?</li>
+      </ul>
+      </p>
     </div>
    
  
