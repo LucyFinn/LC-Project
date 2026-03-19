@@ -136,7 +136,8 @@
 
       <h3><b><u>Wildfire Risk Algorithm:</u></b></h3>
       <p>This algorithm calculates risk using the combination of logging, soil moisture and temperature. Higher temperatures and lower soil moisture increase the wildfire risk score. Logging reduces the number of trees which increases soil exposure and further raises risk levels. There are three possible risk types: low, moderate or high risk. Low risk is shown when the temperature and soil moisture are showing green or yellow LEDs and the logging light isn’t on. High risk is when most or all of the LEDs are red as well as this a buzzer will sound for each red LED, showing how my system is adaptive to changing factors.</p> <br/> <br/>
-
+      <img src = "images/wildfireRisk.jpg" width="40%"/>
+      <br/>
       <h3><b><u>Problem Encountered:</u></b></h3>
       <p>While there were minor issues with the readings of the soil moisture sensor and the temperature sensor, they were easily fixed by changing around the pins or lowering the threshold. However the biggest problem I faced was trying to send the data I collected from the microbit to my python file. It wasn’t a challenge to get it there as I used the serial port however it was extremely difficult to get the data to be entered correctly. To fix this problem I used the python language on mb_detect as this allowed for the data to be less inaccurate. While there are still some outliers in the data set, there are definitely far fewer after using the mb_detect language.</p>
     </div>
