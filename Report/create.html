@@ -50,11 +50,79 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-sm-12">
-       <p>This section should include a description of the key milestones of the development process. You should describe the testing that took place throughout the development process.
-You should explain one of the problems that you encountered during the implementation and describe how you overcame the problem.
-You should describe, in detail, the model you have programmed as part of your coursework project. If you do not have a model, you should explain, in detail, the algorithm you designed for your embedded system.
-</p>
-     
+       <h3><b><u>Key Milestones:</u></b></h3>
+      <p><b><i>Planning</i></b> - For my project I defined the problem and started with the question of: <br/>
+        <i>How does logging affect soil moisture and temperature and how can an adaptive system help predict an increase in wildfire risk? </i> <br/>
+         The following things I made decisions on in my planning stage are:
+       </p>
+      <ul>
+        <li>Researched how logging affects forests.</li>
+        <li>Identified three key factors: logging, temperature and soil moisture.</li>
+        <li>Planned how the micro:bit would simulate these factors.</li>
+        <li>Designed the conditions for the alarm (temperature > 25°C, low soil moisture and less than 200 trees.</li>
+      </ul>
+     <br/>
+
+      <p><b><i>System Design</i></b> - At this stage I designed how all parts of the system would work together. These designs include:</p>
+      <ul>
+        <li><i>Analogue Inputs:</i> temperature and soil moisture</li>
+        <li><i>Digital Input:</i></li> logging (pressing button B)
+        <li><i>Controls:</i></li> Button A to show the soil moisture and Button B to show and start the logging simulation
+        <li><i>Outputs:</i></li> Data is sent to Python, stored in a CSV file, an alarm is triggered when the risk becomes a high risk scenario and a red light will turn on for a high risk of wildfires.
+      </ul>
+      <br/>
+
+      <p><b><i>Development</i></b> - The development stage involved programming both the embedded system and the computer-based model. The stages involved in the development system include:</p>
+      <ul>
+        <li>Programming the microbit correctly, to read the temperature continuously.</li>
+        <li>Programming the buttons and their outputs.</li>
+        <li>Sending the data to python.</li>
+        <li>Programming the python to send the data to a CSV file to be stored and to calculate the risk of a wildfire.</li>
+        <li>Displaying my LEDs when the conditions were correct e.g red LED when temperature is greater than 25°C.</li>
+      </ul>
+      <br/>
+
+      <p><b><i>Testing</i></b> - Once my monitor was built I had to individually test each part of it. This included:</p>
+      <ul>
+        <li>Checking the temperature sensor</li>
+        <li>Checking the button outputs</li>
+        <li>Checking to see if the python receives the correct data</li>
+        <li>Testing the wildfire risk calculator</li>
+        <li>Testing the what-if scenarios</li>
+      </ul>
+      <br/>
+
+        <h3><b><u>Testing:</u></b></h3>
+      <p>There were three types of testing I did to ensure that my project worked correctly. They were: unit testing, integration testing and system testing.</p> <br/>
+      <p><b><i>Unit Testing</i></b> - This involved testing each part of the monitor individually, for example:</p>
+      <ul>
+        <li>Testing the temperature sensor</li>
+        <li>Testing the soil moisture simulation</li>
+        <li>Testing the logging simulation</li>
+        <li>Checking the wildfire risk formula (python)</li>
+      </ul>
+      <p>I did this to ensure that all parts of my project could work separately before testing them all together. At first it was difficult to get the sensors to read correctly, especially the soil moisture simulation. I found with that simulation the pin on the breadboard didn't match the pin on my code therefore the readings were inaccurate.</p> <br/> 
+    
+      <p><b><i>Integration Testing</i></b> - This is where I made sure that different parts of my system worked with each other, for example:</p>
+      <ul>
+        <li>This is where I made sure that different parts of my system worked with each other, for example:</li>
+        <li>Making sure python could write to the CSV file </li>
+      </ul>
+      <p>The most difficult part of the project was to transfer the data to python accurately. I found that the data was being inaccurate whenever the conditions were to change. To try and fix this I used the mb_detect language on python. This did not completely get rid of the errors however it made them far fewer.</p> <br/> 
+    
+    <p><b><i>System Testing</i></b> - This included testing the system as a whole, for example:</p>
+      <ul>
+        <li>Increasing the temperature to trigger a wildfire</li>
+        <li>Lowering the soil moisture to trigger a wildfire</li>
+        <li>Reducing the amount of logging</li>
+      </ul>
+      <br/>
+
+      <h3><b><u>Wildfire Risk Algorithm:</u></b></h3>
+      <p>This algorithm calculates risk using the combination of logging, soil moisture and temperature. Higher temperatures and lower soil moisture increase the wildfire risk score. Logging reduces the number of trees which increases soil exposure and further raises risk levels. There are three possible risk types: low, moderate or high risk. Low risk is shown when the temperature and soil moisture are showing green or yellow LEDs and the logging light isn’t on. High risk is when most or all of the LEDs are red as well as this a buzzer will sound for each red LED, showing how my system is adaptive to changing factors.</p> <br/> <br/>
+
+      <h3><b><u>Problem Encountered:</u></b></h3>
+      <p>While there were minor issues with the readings of the soil moisture sensor and the temperature sensor, they were easily fixed by changing around the pins or lowering the threshold. However the biggest problem I faced was trying to send the data I collected from the microbit to my python file. It wasn’t a challenge to get it there as I used the serial port however it was extremely difficult to get the data to be entered correctly. To fix this problem I used the python language on mb_detect as this allowed for the data to be less inaccurate. While there are still some outliers in the data set, there are definitely far fewer after using the mb_detect language.</p>
     </div>
    
  
